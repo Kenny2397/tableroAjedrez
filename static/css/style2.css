@@ -1,0 +1,30 @@
+*{
+    padding:0;
+    margin:0;
+    background-color:antiquewhite;
+}
+#main,h1{
+    margin:20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border-collapse: collapse;
+}
+.container{
+    display:flex;
+}
+.casilla1{
+    background-color: red;
+    /* border: 1px solid black; */
+    height: 60px;
+    width:60px;
+}
+.casilla2{
+    background-color: blue;
+    /* border: 1px solid black; */
+    height: 60px;
+    width:60px;
+}
+

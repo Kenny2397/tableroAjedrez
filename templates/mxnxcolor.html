@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='css/style2.css')}}">
+</head>
+
+<body>
+    <h1>Tablero de Ajedrez</h1>
+    <div id="main">
+        <table>
+            {% for i in range(x): %}
+            <tr>
+                {% for j in range(y): %}
+                <th>
+                    <div class="container">
+                        <div class='casilla{{(i+j)%2+1}} '></div>
+                        <style type="text/css">
+                            .casilla1 {
+                                color: '{{color}}';
+                            }
+                        </style>
+                    </div>
+                </th>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+
+</html>
