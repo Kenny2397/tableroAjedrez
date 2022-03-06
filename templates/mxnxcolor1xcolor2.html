@@ -18,10 +18,13 @@
                 {% for j in range(y): %}
                 <th>
                     <div class="container">
-                        <div class='casilla{{(i+j)%2+1}} '></div>
-                        <style type="text/css">
+                        <div class='casilla{{(i+j)%2+1}}'></div>
+                        <style>
                             .casilla1 {
-                                color: '{{color}}';
+                                background-color: {{color1}};
+                            }
+                            .casilla2 {
+                                background-color: {{color2}};
                             }
                         </style>
                     </div>
